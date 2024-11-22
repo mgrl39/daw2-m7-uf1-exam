@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Examen UF1 M07</title>
+	</head>
+
+	<body>
+		<h1>MOBILS</h1>
+
+		<h2>Alta Mobil</h2>
+		<form action="TelMobilController" method="post">
+			<label for="id">ID TEL</label>
+			<input type="number" name="id" placeholder="id" required>
+			<select name="ordre">
+				<option>Afegir</option>
+				<option>Eliminar</option>
+			</select>
+			<p>Si nomes elimines no fa falta emplenar la resta de dades...</p>		
+			<label for="marca">MARCA</label>
+			<input type="text" name="marca" placeholder="Mercedes">
+			<br>
+			<label for="model">MODEL</label>
+			<input type="text" name="model" placeholder="Model">
+			<br>
+			<label for="any">ANY</label>
+			<input type="text" name="any" placeholder="Any">
+			<br>
+			<label for="reacondicionat">REACONDICIONAT</label>
+			<select name="reacondicionat">
+				<option>SI</option>
+				<option>NO</option>
+			</select><br>
+			<label for="preu">PREU</label>
+			<input type="text" name="preu" placeholder="1000">
+			<br>
+
+			<input type="submit">
+		</form>
+
+		<h2>Visualitzar els Mobils</h2>
+		<form action="TelMobilController" method="get">
+			<input type="submit">
+		</form>
+
+	</body>
+
+</html>
